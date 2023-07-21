@@ -10,16 +10,6 @@ var helloRouter = require('./routes/hello');
 
 var app = express();
 
-// add session
-const session = require('express-session');
-var session_opt = {
-  secret: 'keyboard cat',
-  resave: false,
-  saveUninitialized: false,
-  cookie: {maxAge: 60 * 60 * 1000}
-};
-app.use(session(session_opt));
-
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
