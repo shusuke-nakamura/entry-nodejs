@@ -20,6 +20,8 @@
 
 ## Prisma(ORM)
 ### [コマンド] npm install prisma -g
+## PrismaClient
+### [コマンド] npm install @prisma/client
 
 ## mydataテーブル
 ### CREATE TABLE "mydata" ("id" INTEGER NOT NULL UNIQUE, "name" TEXT NOT NULL, "mail" TEXT, "age" INTEGER, PRIMARY KEY("id" AUTOINCREMENT));
