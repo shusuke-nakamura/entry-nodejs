@@ -28,13 +28,13 @@ router.get('/', (req, res, next)=>{
 });
 
 router.get('/find', (req, res, next) => {
-  const min = +req.query.min;
-  const max = +req.query.max;
+  const name = req.query.name;
+  const mail = req.query.mail;
   prisma.user.findMany({
     where: {
-      AND: [
-        {age: {gte: min}},
-        {age: {lte: max}}
+      OR: [
+        {name: {contains: name}},
+        {mail: {contains: mail}}
       ]
     }
   }).then(usrs => {
