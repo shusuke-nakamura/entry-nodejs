@@ -25,6 +25,10 @@
 ### [コマンド] npm install prisma -g
 ## PrismaClient
 ### [コマンド] npm install @prisma/client
+## マイグレーションの実行
+### [コマンド] prisma migrate dev --name 
+## studioの起動
+### [コマンド] prisma studio
 
 ## mydataテーブル
 ### CREATE TABLE "mydata" ("id" INTEGER NOT NULL UNIQUE, "name" TEXT NOT NULL, "mail" TEXT, "age" INTEGER, PRIMARY KEY("id" AUTOINCREMENT));
