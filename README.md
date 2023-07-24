@@ -6,6 +6,9 @@
 ## Expressジェネレータのインストール
 ### [コマンド] npm install -g express-generator
 
+## Expressプロジェクトの作成
+### [コマンド] express --view=ejs アプリケーション名
+
 ## セッションの利用する場合、Express Sessionを利用する。
 ### [コマンド] npm install express-session
 
